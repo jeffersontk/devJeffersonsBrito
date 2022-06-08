@@ -8,16 +8,16 @@ export const Navigation = (): ReactElement => {
     >
       <ul className="flex items-center gap-5 text-white text-lg">
         <li>
-          <a href="#aboutMe">About me</a>
+          <a href="#aboutMe">Inicio</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects">Projetos</a>
         </li>
         <li>
           <a href="#posts">Posts</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">Contato</a>
         </li>
       </ul>
     </div>
