@@ -3,7 +3,7 @@ import { ReactElement } from "react";
 export const Navigation = (): ReactElement => {
   return (
     <div
-      className="sticky top-0 z-50 bg-secondary-dark h-14 flex
+      className="sticky top-0 z-50 bg-blue-200 h-14 flex
         items-center justify-end px-32"
     >
       <ul className="flex items-center gap-5 text-white text-lg">

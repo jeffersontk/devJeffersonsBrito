@@ -6,7 +6,7 @@ export const Footer = (): ReactElement => {
   return (
     <footer
       id="contact"
-      className="w-full bg-primary-dark h-52 flex flex-col justify-center items-center px-32">
+      className="w-full bg-blue-100 h-52 flex flex-col justify-center items-center px-32">
       <div className="h-32 flex justify-end items-start gap-5 text-primary-light">
         <div className="flex flex-col gap-3">
           <Link href="https://github.com/jeffersontk" passHref>
