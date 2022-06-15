@@ -8,6 +8,7 @@ import { Footer } from '../components/Footer'
 import { Article, Code } from 'phosphor-react'
 import { Carousel } from '../components/Carousel'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
@@ -30,10 +31,19 @@ const Home: NextPage = () => {
                   uma breve descrição sobre mim e meu trabalho.
                   <br /> <br />
                   Formado em Analise e Desenvolvimento de Sistemas pelo
-                  <a href='https://www.unicarioca.edu.br/' target="_blank"> Centro Universitário Carioca ou UniCarioca </a>
-                  e atualmente cursando pós-graduação em Experiência do Usuário no <a href="https://loja.ibmronline.com.br/">
-                    centro universitário IBMR
-                  </a> com o objetivo de desenvolver sistemas com uma boa usabilidade e experiência para o usuário.
+                  <Link href='https://www.unicarioca.edu.br/' passHref>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        textDecoration: 'underline'
+                      }}> Centro Universitário Carioca </a>
+                  </Link>
+                  e atualmente cursando pós-graduação em Experiência do Usuário no <Link href="https://loja.ibmronline.com.br/" passHref>
+                    <a target="_blank" rel="noopener noreferrer" style={{
+                      textDecoration: 'underline'
+                    }}>Centro universitário IBMR</a>
+                  </Link> com o objetivo de desenvolver sistemas com uma boa usabilidade e experiência para o usuário.
                   <br /> <br />
                   Atuando como desenvolvedor front-end na Firjan SENAI no ISI (Instituto de Tecnologia e Inovação).
                 </p>
