@@ -21,10 +21,10 @@ type Props = {
 const randomMovement = ({ x = -200, y = 200 }: ballProps) => {
   return keyframes`
   0% {
-    transform: translate(${x}px, ${y}px);
+    transform: translate(${random(x, 3)}px, ${random(10, y)}px);
   }
   100% {
-    transform: translate(${y}px, ${x}px);
+  transform:  translate(${random(y, 15)}px, ${random(-25, x)}px);
 `
 }
 
