@@ -82,58 +82,58 @@ const Home: NextPage = () => {
                 <div className="flex items-end h-40 pr-14">
                   <h1 className="text-primary-light font-medium text-3xl">Minhas Habilidades</h1>
                 </div>
-                <div className='max-w-xl h-full flex flex-row flex-wrap  justify-center items-center overflow-hidden gap-2'>
+                <div className='max-w-xl h-80 flex flex-row flex-wrap  justify-center items-center overflow-hidden gap-2'>
                   <BallStacks
-                    x={random(50, 150)}
-                    y={random(150, 0)}
+                    x={50}
+                    y={150}
                     skill={JavascriptIMG}
                     alt="Javascript"
                   />
                   <BallStacks
-                    x={random(50, 150)}
-                    y={random(150, 0)}
+                    x={150}
+                    y={2}
                     skill={TypescriptIMG}
                     alt="Typescript"
                   />
                   <BallStacks
-                    x={random(150, -150)}
-                    y={random(-150, 150)}
+                    x={-150}
+                    y={150}
                     skill={HTMLIMG}
                     alt="HTML5"
                   />
                   <BallStacks
-                    x={random(150, -150)}
-                    y={random(-150, 150)}
+                    x={-50}
+                    y={150}
                     skill={CSSIMG}
                     alt="CSS3"
                   />
                   <BallStacks
-                    x={random(150, -150)}
-                    y={random(-150, 150)}
+                    x={5}
+                    y={150}
                     skill={ReactIMG}
                     alt="React JS"
                   />
                   <BallStacks
-                    x={random(-100, -150)}
-                    y={random(50, 150)}
+                    x={-100}
+                    y={50}
                     skill={VueJSIMG}
                     alt="Vue JS"
                   />
                   <BallStacks
-                    x={random(0, -150)}
-                    y={random(0, 150)}
+                    x={-50}
+                    y={150}
                     skill={NodeIMG}
                     alt="Node JS"
                   />
                   <BallStacks
-                    x={random(50, -150)}
-                    y={random(50, -150)}
+                    x={50}
+                    y={-150}
                     skill={SassIMG}
                     alt="Pre processador css - Sass"
                   />
                   <BallStacks
-                    x={random(50, -150)}
-                    y={random(50, -150)}
+                    x={-150}
+                    y={50}
                     skill={Figma}
                     alt="Ferramenta de designer - Figma"
                   />

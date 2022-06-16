@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import { ReactElement } from "react";
-import JavascriptIMG from "../../assets/javascript.jpg";
 import styled, { keyframes } from "styled-components";
 
 export const random = (min: number, max: number) => {
@@ -19,16 +18,15 @@ type Props = {
   alt: string;
 }
 
-const randomMovement = ({ x = -200, y = 200 }: ballProps) => keyframes`
+const randomMovement = ({ x = -200, y = 200 }: ballProps) => {
+  return keyframes`
   0% {
-    transform: translate(${random(x, y)}px, ${random(y, x)}px);
-  }
-  50% {
-    transform: translate(${random(x, y)}px, ${random(y, x)}px);
+    transform: translate(${x}px, ${y}px);
   }
   100% {
-    transform: translate(${random(x, y)}px, ${random(y, x)}px);
+    transform: translate(${x}px, ${y}px);
 `
+}
 
 const BallStacksStyled = styled.div<ballProps>`
   display: flex;
@@ -39,7 +37,9 @@ const BallStacksStyled = styled.div<ballProps>`
   padding: 0.5rem;
   width 5rem;
   height: 5rem;
-  animation: ${(props) => randomMovement(props)} 5s infinite linear alternate;
+  animation: ${(props) => {
+    return randomMovement(props)
+  }} 5s infinite linear alternate;
   `
 
 export const BallStacks = ({ x = -200, y = 200, skill, alt }: Props): ReactElement => {
