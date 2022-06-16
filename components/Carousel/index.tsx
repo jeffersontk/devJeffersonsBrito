@@ -9,7 +9,7 @@ type Props = {
   styleCard: "Default" | "Polaroid";
 }
 
-const Container = styled.article`
+export const Container = styled.article`
   height: 30rem;
   width: 100%;
   display: flex;

@@ -22,7 +22,7 @@ module.exports = {
       minWidth: {
         '40': '10rem',
         '60': '15rem',
-      }
+      },
     },
   },
   variants: {

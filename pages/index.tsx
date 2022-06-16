@@ -3,12 +3,22 @@ import Image from 'next/image'
 import { BackgroundSection } from '../components/BackgroundSection'
 import { Navigation } from '../components/Navigation'
 import Jeffbrito from '../assets/jefferson-brito.png'
+import JavascriptIMG from "../assets/javascript.jpg";
+import TypescriptIMG from "../assets/typescript.png";
+import HTMLIMG from "../assets/html.jpg";
+import CSSIMG from "../assets/css.jpg";
+import ReactIMG from "../assets/reactJS.png";
+import NodeIMG from "../assets/nodeJS.png";
+import SassIMG from "../assets/sass.png";
+import Figma from "../assets/figma.png";
+
 import { DividerSection } from '../components/DividerSection'
 import { Footer } from '../components/Footer'
 import { Article, Code } from 'phosphor-react'
-import { Carousel } from '../components/Carousel'
+import { Carousel, Container } from '../components/Carousel'
 import Head from 'next/head'
 import Link from 'next/link'
+import { BallStacks, random } from '../components/BallStacks'
 
 const Home: NextPage = () => {
   return (
@@ -45,7 +55,7 @@ const Home: NextPage = () => {
                     }}>Centro universitário IBMR</a>
                   </Link> com o objetivo de desenvolver sistemas com uma boa usabilidade e experiência para o usuário.
                   <br /> <br />
-                  Atuando como desenvolvedor front-end na Firjan SENAI no ISI (Instituto de Tecnologia e Inovação).
+                  Atuando como desenvolvedor front-end na Firjan SENAI no ISTI (Instituto SENAI de Tecnologia e Inovação).
                 </p>
               </div>
             ),
@@ -67,7 +77,53 @@ const Home: NextPage = () => {
           box1={{
             color: 'bg-blue-200',
             content: (
-              <h1 className="text-3xl text-center text-white"></h1>
+              <Container>
+                <div className="flex items-end h-40 pr-14">
+                  <h1 className="text-primary-light font-medium text-3xl">Minhas Habilidades</h1>
+                </div>
+                <div className='max-w-lg h-full flex justify-center items-center overflow-hidden'>
+                  <BallStacks
+                    x={random(50, 150)}
+                    y={random(150, 0)}
+                    skill={JavascriptIMG}
+                  />
+                  <BallStacks
+                    x={random(50, 150)}
+                    y={random(150, 0)}
+                    skill={TypescriptIMG}
+                  />
+                  <BallStacks
+                    x={random(150, -150)}
+                    y={random(-150, 150)}
+                    skill={HTMLIMG}
+                  />
+                  <BallStacks
+                    x={random(150, -150)}
+                    y={random(-150, 150)}
+                    skill={CSSIMG}
+                  />
+                  <BallStacks
+                    x={random(150, -150)}
+                    y={random(-150, 150)}
+                    skill={ReactIMG}
+                  />
+                  <BallStacks
+                    x={random(0, -150)}
+                    y={random(0, 150)}
+                    skill={NodeIMG}
+                  />
+                  <BallStacks
+                    x={random(50, -150)}
+                    y={random(50, -150)}
+                    skill={SassIMG}
+                  />
+                  <BallStacks
+                    x={random(50, -150)}
+                    y={random(50, -150)}
+                    skill={Figma}
+                  />
+                </div>
+              </Container>
             ),
           }}
           box2={{
