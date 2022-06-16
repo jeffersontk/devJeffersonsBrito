@@ -34,12 +34,11 @@ const BallStacksStyled = styled.div<ballProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   border-radius: 100%;
   background-color: #2b3656;
   padding: 0.5rem;
-  width 4rem;
-  height: 4rem;
+  width 5rem;
+  height: 5rem;
   animation: ${(props) => randomMovement(props)} 5s infinite linear alternate;
   `
 

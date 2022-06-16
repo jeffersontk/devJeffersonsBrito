@@ -82,7 +82,7 @@ const Home: NextPage = () => {
                 <div className="flex items-end h-40 pr-14">
                   <h1 className="text-primary-light font-medium text-3xl">Minhas Habilidades</h1>
                 </div>
-                <div className='max-w-lg h-full flex justify-center items-center overflow-hidden'>
+                <div className='max-w-xl h-full flex flex-row flex-wrap  justify-center items-center overflow-hidden gap-2'>
                   <BallStacks
                     x={random(50, 150)}
                     y={random(150, 0)}
@@ -114,8 +114,8 @@ const Home: NextPage = () => {
                     alt="React JS"
                   />
                   <BallStacks
-                    x={random(150, -150)}
-                    y={random(-150, 150)}
+                    x={random(-100, -150)}
+                    y={random(50, 150)}
                     skill={VueJSIMG}
                     alt="Vue JS"
                   />
