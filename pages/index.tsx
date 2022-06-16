@@ -86,41 +86,49 @@ const Home: NextPage = () => {
                     x={random(50, 150)}
                     y={random(150, 0)}
                     skill={JavascriptIMG}
+                    alt="Javascript"
                   />
                   <BallStacks
                     x={random(50, 150)}
                     y={random(150, 0)}
                     skill={TypescriptIMG}
+                    alt="Typescript"
                   />
                   <BallStacks
                     x={random(150, -150)}
                     y={random(-150, 150)}
                     skill={HTMLIMG}
+                    alt="HTML5"
                   />
                   <BallStacks
                     x={random(150, -150)}
                     y={random(-150, 150)}
                     skill={CSSIMG}
+                    alt="CSS3"
                   />
                   <BallStacks
                     x={random(150, -150)}
                     y={random(-150, 150)}
                     skill={ReactIMG}
+                    alt="React JS"
                   />
                   <BallStacks
                     x={random(0, -150)}
                     y={random(0, 150)}
                     skill={NodeIMG}
+                    alt="Node JS"
                   />
                   <BallStacks
                     x={random(50, -150)}
                     y={random(50, -150)}
                     skill={SassIMG}
+                    alt="Pre processador css - Sass"
                   />
                   <BallStacks
                     x={random(50, -150)}
                     y={random(50, -150)}
                     skill={Figma}
+                    alt="Ferramenta de designer - Figma"
                   />
                 </div>
               </Container>

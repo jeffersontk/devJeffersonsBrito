@@ -16,6 +16,7 @@ type Props = {
   x: number;
   y: number;
   skill: StaticImageData;
+  alt: string;
 }
 
 const randomMovement = ({ x = -200, y = 200 }: ballProps) => keyframes`
@@ -42,10 +43,10 @@ const BallStacksStyled = styled.div<ballProps>`
   animation: ${(props) => randomMovement(props)} 5s infinite linear alternate;
   `
 
-export const BallStacks = ({ x = -200, y = 200, skill }: Props): ReactElement => {
+export const BallStacks = ({ x = -200, y = 200, skill, alt }: Props): ReactElement => {
   return (
     <BallStacksStyled x={x} y={y}>
-      <Image src={skill} className="rounded-full w-full h-full" />
+      <Image src={skill} className="rounded-full w-full h-full" alt={alt} title={alt} />
     </BallStacksStyled>
   )
 }

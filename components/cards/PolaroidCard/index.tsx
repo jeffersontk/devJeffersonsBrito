@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 import styled from 'styled-components'
 import { CardsProps } from "..";
+import Image from "next/image";
 
 const Item = styled.div`
   background-color: #fff;
@@ -8,10 +9,6 @@ const Item = styled.div`
   padding: 10px;
   width: 280px;
   flex: none;
-`
-const Image = styled.div`
-  width: 100%;
-  object-fit: cover;
 `
 const Content = styled.div`
   height: 80px;
@@ -40,9 +37,7 @@ export const PolaroidCard = ({
 }: CardsProps): ReactElement => {
   return (
     <Item>
-      <Image>
-        <img src={imageBackground} alt={title} />
-      </Image>
+      <Image src={imageBackground} alt={title} />
       <Content>
         <PolaroidTitle>{title}</PolaroidTitle>
         <PolaroidDescription>{description}</PolaroidDescription>
