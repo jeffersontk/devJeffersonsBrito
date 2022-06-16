@@ -7,10 +7,11 @@ import JavascriptIMG from "../assets/javascript.jpg";
 import TypescriptIMG from "../assets/typescript.png";
 import HTMLIMG from "../assets/html.jpg";
 import CSSIMG from "../assets/css.jpg";
-import ReactIMG from "../assets/reactJS.png";
 import NodeIMG from "../assets/nodeJS.png";
 import SassIMG from "../assets/sass.png";
-import Figma from "../assets/figma.png";
+import ReactIMG from "../assets/reactJSLogo.png";
+import Figma from "../assets/figmaLogo.png";
+import VueJSIMG from "../assets/vueJSLogo.png";
 
 import { DividerSection } from '../components/DividerSection'
 import { Footer } from '../components/Footer'
@@ -111,6 +112,12 @@ const Home: NextPage = () => {
                     y={random(-150, 150)}
                     skill={ReactIMG}
                     alt="React JS"
+                  />
+                  <BallStacks
+                    x={random(150, -150)}
+                    y={random(-150, 150)}
+                    skill={VueJSIMG}
+                    alt="Vue JS"
                   />
                   <BallStacks
                     x={random(0, -150)}
