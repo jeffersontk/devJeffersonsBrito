@@ -24,7 +24,7 @@ const randomMovement = ({ x = -200, y = 200 }: ballProps) => {
     transform: translate(${x}px, ${y}px);
   }
   100% {
-    transform: translate(${x}px, ${y}px);
+    transform: translate(${y}px, ${x}px);
 `
 }
 
