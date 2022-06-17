@@ -1,0 +1,33 @@
+  $size: 5;
+
+  .ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #2b3656;
+    padding: 10px;
+    width: #{$size}rem;
+    height: #{$size}rem;
+  }
+
+  // sass for the ball and animation your random moving the ball
+
+  @for $i from 1 through 10 {
+    $moveY: random(100);
+    $moveX: random(100) * -1;
+
+    .ball-#{$i} {
+      animation: ball-#{$i} 1s ease-in-out infinite;
+    }
+
+    @keyframes ball-#{$i} {
+      0% {
+        transform: translate($moveX, $moveY);
+      }
+
+      100% {
+        transform: translate($moveY, $moveX);
+      }
+    }
+  }
