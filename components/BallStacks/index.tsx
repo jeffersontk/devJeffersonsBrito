@@ -39,7 +39,7 @@ const BallStacksStyled = styled.div<ballProps>`
   height: 5rem;
   animation: ${(props) => {
     return randomMovement(props)
-  }} 3s infinite linear alternate;
+  }} 10s infinite linear alternate;
   `
 
 export const BallStacks = ({ skill, alt }: Props): ReactElement => {
@@ -48,8 +48,8 @@ export const BallStacks = ({ skill, alt }: Props): ReactElement => {
   )
   useEffect(() => {
     setRandomValues({
-      x: Math.random() * (3 - -150) + -200,
-      y: Math.random() * (150 - 10) + 10
+      x: Math.random() * (-30 - -100) + -100,
+      y: Math.random() * (-100 - 30) + 10
     })
   }, [alt])
 

@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           box1={{
             color: 'bg-blue-100',
             content: (
-              <div className='p-14 flex flex-col gap-10 justify-center items-center'>
+              <div className='px-14 pt-10 flex flex-col gap-10 justify-center items-center'>
                 <p className="text-xl text-primary-light">
                   Olá aqui é o jefferson Brito, seja bem-vindo! <br />
                   Aqui você pode ver alguns dos meus projetos, posts e os meus canais de contato e
@@ -56,8 +56,11 @@ const Home: NextPage = () => {
                     }}>Centro universitário IBMR</a>
                   </Link> com o objetivo de desenvolver sistemas com uma boa usabilidade e experiência para o usuário.
                   <br /> <br />
-                  Atuando como desenvolvedor front-end na Firjan SENAI no ISTI (Instituto SENAI de Tecnologia e Inovação).
+                  Atuando como desenvolvedor front-end na Firjan SENAI no ISI (Instituto SENAI de Inovação).
                 </p>
+                <div className="flex w-full">
+                  <button className='bg-primary-light w-40 px-4 py-2 font-semibold text-blue-200 rounded-3xl'>Ler mais</button>
+                </div>
               </div>
             ),
           }}
@@ -79,10 +82,10 @@ const Home: NextPage = () => {
             color: 'bg-blue-200',
             content: (
               <Container>
-                <div className="flex items-end h-40 pr-14">
+                <div className="flex items-end h-24 mb-6">
                   <h1 className="text-primary-light font-medium text-3xl">Minhas Habilidades</h1>
                 </div>
-                <div className='max-w-xl h-80 flex flex-row flex-wrap  justify-center items-center overflow-hidden gap-2'>
+                <div className='max-w-xl xl:max-w-3xl h-80 flex flex-row flex-wrap  justify-end items-center overflow-hidden gap-2'>
                   <BallStacks
                     x={50}
                     y={150}
@@ -187,18 +190,69 @@ const Home: NextPage = () => {
         />
         <BackgroundSection
           id="posts"
-          box1={{
-            color: 'bg-blue-100',
-            content: (
-              <h1 className="text-3xl text-center text-white"></h1>
-            ),
-          }}
-          box2={{
+          box3={{
             color: 'bg-blue-200',
             content: (
-              <div className='flex items-end h-110 justify-center'>
-              </div>
-            ),
+              <Carousel
+                styleCard='Default'
+                slides={[
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 1',
+                    description: 'Descrição do projeto 1',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 2',
+                    description: 'Descrição do projeto 3 asdasd asdasdhoiasjd akjsdlaksjdlaksjdç laksjdçlaksjd çlaskjdçalskdaçlskdaçslkdjaçsldkja hasuhdajsdash',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 3',
+                    description: 'Descrição do projeto 3',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 2',
+                    description: 'Descrição do projeto 3 asdasd asdasdhoiasjd akjsdlaksjdlaksjdç laksjdçlaksjd çlaskjdçalskdaçlskdaçslkdjaçsldkja hasuhdajsdash',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 3',
+                    description: 'Descrição do projeto 3',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 2',
+                    description: 'Descrição do projeto 3 asdasd asdasdhoiasjd akjsdlaksjdlaksjdç laksjdçlaksjd çlaskjdçalskdaçlskdaçslkdjaçsldkja hasuhdajsdash',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 3',
+                    description: 'Descrição do projeto 3',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 2',
+                    description: 'Descrição do projeto 3 asdasd asdasdhoiasjd akjsdlaksjdlaksjdç laksjdçlaksjd çlaskjdçalskdaçlskdaçslkdjaçsldkja hasuhdajsdash',
+                    link: 'https://www.google.com',
+                  },
+                  {
+                    imageBackground: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+                    title: 'Projeto 3',
+                    description: 'Descrição do projeto 3',
+                    link: 'https://www.google.com',
+                  }
+                ]}
+              />
+            )
           }}
         />
         <Footer />

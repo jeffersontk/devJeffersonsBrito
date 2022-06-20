@@ -16,6 +16,7 @@ export const Container = styled.article`
   flex-direction: column;
   justify-content: center;
   padding-left: 3.5rem;
+  padding-right: 3.5rem;
 `
 const CarouselStyled = styled.div`
   display: flex;
@@ -42,7 +43,7 @@ export const Carousel = ({ slides, styleCard }: Props): ReactElement => {
     <Container>
       <div className="flex items-center justify-between mb-3">
         <label className='text-primary-light font-medium text-3xl'>Projetos</label>
-        <div className="flex gap-3 px-14">
+        <div className="flex gap-3">
           <CaretCircleLeft
             onClick={handleLeftClick}
             size={42}

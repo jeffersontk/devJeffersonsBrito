@@ -1,0 +1,73 @@
+.card {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  transform-style: preserve-3d;
+}
+
+.face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  background-size: cover;
+  background-position: center center;
+  transition: transform 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out 0.5s ease-in-out;
+}
+
+.faceFront {
+  background-color: #1b2237;
+}
+
+.faceFront img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.faceBack {
+  background-color: #1b2237;
+  color: transparent;
+  display: none;
+}
+
+.faceBackEmail {
+  background-color: #1b2237;
+  color: transparent;
+  display: none;
+}
+
+.card:hover .faceFront {
+  display: none;
+}
+
+.card:hover .faceBack {
+  display: flex;
+  color: #f5f5f5;
+  width: 10rem;
+  z-index: 30;
+  margin-right: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.card:hover .faceBackEmail {
+  display: flex;
+  color: #f5f5f5;
+  width: 15rem;
+  z-index: 30;
+  margin-right: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
