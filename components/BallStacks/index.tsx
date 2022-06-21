@@ -12,8 +12,6 @@ type ballProps = {
   y: number;
 }
 type Props = {
-  x: number;
-  y: number;
   skill: StaticImageData;
   alt: string;
 }
@@ -48,8 +46,8 @@ export const BallStacks = ({ skill, alt }: Props): ReactElement => {
   )
   useEffect(() => {
     setRandomValues({
-      x: Math.random() * (-30 - -100) + -100,
-      y: Math.random() * (-100 - 30) + 10
+      x: Math.random() * (100 - -200) + -100,
+      y: Math.random() * (-200 - 60) + 10
     })
   }, [alt])
 

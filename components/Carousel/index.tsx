@@ -7,6 +7,7 @@ import { CardsProps, typeCard } from "../cards";
 type Props = {
   slides: CardsProps[];
   styleCard: "Default" | "Polaroid";
+  title: string;
 }
 
 export const Container = styled.article`
@@ -15,8 +16,6 @@ export const Container = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
 `
 const CarouselStyled = styled.div`
   display: flex;
@@ -26,7 +25,7 @@ const CarouselStyled = styled.div`
 `
 
 
-export const Carousel = ({ slides, styleCard }: Props): ReactElement => {
+export const Carousel = ({ slides, styleCard, title }: Props): ReactElement => {
   const carousel = useRef<null | HTMLDivElement>(null);
 
   const handleLeftClick = (e: any) => {
@@ -42,7 +41,7 @@ export const Carousel = ({ slides, styleCard }: Props): ReactElement => {
   return (
     <Container>
       <div className="flex items-center justify-between mb-3">
-        <label className='text-primary-light font-medium text-3xl'>Projetos</label>
+        <label className='text-primary-light font-medium text-3xl'>{title}</label>
         <div className="flex gap-3">
           <CaretCircleLeft
             onClick={handleLeftClick}

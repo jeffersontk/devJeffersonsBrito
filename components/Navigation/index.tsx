@@ -1,7 +1,30 @@
 import Link from "next/link";
-import { ReactElement } from "react";
+import { ReactElement, useEffect, useState } from "react";
+import { DrawerMenu } from "../DrawerMenu";
 
 export const Navigation = (): ReactElement => {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const windowWidth = window.innerWidth
+      setIsMobile(windowWidth < 768)
+    }
+  }, [])
+
+  if (isMobile) {
+    return (
+      <nav className="sticky top-0 z-50 bg-blue-200 h-14 flex items-center w-full">
+        <div className="flex-1 flex justify-between">
+          <Link href="/">
+            <a className="flex gap-1 items-center text-primary-light font-bold pl-6">
+              @DevJeffersonBrito
+            </a>
+          </Link>
+          <DrawerMenu />
+        </div>
+      </nav>
+    )
+  }
   return (
     <div
       className="sticky top-0 z-50 bg-blue-200 h-14 flex
@@ -14,7 +37,7 @@ export const Navigation = (): ReactElement => {
           </a>
         </Link>
       </div>
-      <ul className="flex items-center gap-5 text-white text-lg">
+      <ul className="flex items-center gap-5 text-white text-lg font-semibold">
         <li>
           <a href="#aboutMe">Sobre</a>
         </li>

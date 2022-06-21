@@ -7,10 +7,10 @@ export const Footer = (): ReactElement => {
   return (
     <footer
       id="contact"
-      className="w-full bg-blue-100 h-72 flex flex-col justify-center items-center px-16 pb-4">
-      <div className="h-48 w-full flex justify-around text-primary-light">
+      className="w-full bg-blue-100 h-72 flex flex-col justify-center items-center md:px-16 px-6">
+      <div className="h-full md:h-48 w-full flex justify-around text-primary-light">
         <div className="flex flex-col gap-2">
-          <span className="font-semibold mb-2">Rede sociais e plataformas</span>
+          <span className="font-semibold mb-2">Rede sociais</span>
           <Link href="https://github.com/jeffersontk" passHref>
             <a className="flex gap-1 items-center" target="_blank" rel="noopener noreferrer">
               <div className={style.card}>
@@ -75,7 +75,7 @@ export const Footer = (): ReactElement => {
             </div>
             Email
           </div>
-          <div className="flex gap-1 items-center">
+          <div className="flex gap-1 items-center max-w-[150px] md:max-w-[250px]">
             <div className={style.card}>
               <div className="w-12 h-12 bg-blue-200 flex justify-center items-center rounded-xl">
                 <Download size={24} color="#f5f5f5" weight="fill" />
@@ -83,13 +83,9 @@ export const Footer = (): ReactElement => {
             </div>
             Download do meu currículo
           </div>
-          <span className="flex gap-1 items-end">
-
-
-          </span>
         </div>
       </div>
-      <div className="border-t-2 border-secondary-dark w-full h-10 flex justify-center items-center mt-5 text-primary-light ">
+      <div className="border-t-[1px] border-secondary-dark w-full h-14 flex justify-center items-center mt-5 text-primary-light ">
         <h4>Desenvolvido por Jefferson Brito</h4>
       </div>
     </footer >
