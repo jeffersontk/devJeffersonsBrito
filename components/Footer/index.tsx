@@ -9,7 +9,7 @@ export const Footer = (): ReactElement => {
     <footer
       id="contact"
       className="w-full bg-blue-100 h-72 flex flex-col justify-center items-center md:px-16 px-6">
-      <div className="h-full md:h-48 w-full flex justify-around text-primary-light">
+      <div className="h-full md:h-48 w-full flex flex-row-reverse md:justify-around justify-between text-primary-light">
         <div className="flex flex-col gap-2">
           <span className="font-semibold mb-2">Rede sociais</span>
           <Link href="https://github.com/jeffersontk" passHref>
