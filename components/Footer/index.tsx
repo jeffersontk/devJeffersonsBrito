@@ -74,7 +74,7 @@ export const Footer = (): ReactElement => {
               <div className={`${style.face} ${style.faceFront}`}>
                 <Envelope size={24} color="#f5f5f5" weight="fill" />
               </div>
-              <div className={`${style.face} ${style.faceBackEmail}`}>
+              <div className={`${style.face} ${style.faceBackEmail}`} title="jefferson.britotk@gmail.com">
                 jefferson.britotk@gmail.com
               </div>
             </div>
