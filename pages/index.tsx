@@ -24,7 +24,9 @@ const Home: NextPage = () => {
             color1: 'md:bg-blue-100 bg-blue-100',
             color2: 'md:bg-blue-200 bg-blue-200',
           }}
-          children={<Hero />}
+          content={
+            (<Hero />)
+          }
         />
         <DividerSection
           icon={<Code size={24} color="#222b45" weight="bold" />}
@@ -35,7 +37,7 @@ const Home: NextPage = () => {
             color1: 'md:bg-blue-200 bg-blue-100',
             color2: 'md:bg-blue-100 bg-blue-200',
           }}
-          children={<Projects />}
+          content={(<Projects />)}
         />
         <DividerSection
           icon={<Article size={24} color="#222b45" weight="bold" />}
@@ -46,7 +48,7 @@ const Home: NextPage = () => {
             color1: 'bg-blue-100',
             color2: 'bg-blue-200',
           }}
-          children={<Posts />}
+          content={(<Posts />)}
           hiddenBox={true}
         />
         <Footer />
