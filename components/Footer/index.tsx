@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Download, Envelope, GithubLogo, InstagramLogo, LinkedinLogo, Phone } from "phosphor-react";
 import { ReactElement } from "react";
@@ -15,7 +16,10 @@ export const Footer = (): ReactElement => {
             <a className="flex gap-1 items-center" target="_blank" rel="noopener noreferrer">
               <div className={style.card}>
                 <div className={`${style.face} ${style.faceFront}`}>
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACL0lEQVRIidVVPWtUQRQ9d6LwZqfQRkTFQgXBKKJG8CdEDQTBtHYWVoqFskXwI4VBQQv9BYp9hFUEEbQWIwgiwQ/EKqbZRd7cu9u8vRa+F2ZnZ/clZQ4MPM7ce869l3kzwFYHjdtU1QkROQtgDsBJAPvLnFUAH4jopbX2BREVmzbw3k8DeExEh2uK/AngmnPuVWrTJKomZr5LRK83IA4AhwC0ROSBqg4VPGQgIgsAbqFmfBFIVW+UuaMNmHkGwHxATQGYBfAlTlTV70Q0VxTFkYCeZ+ZzyRJUdRsz/2BmrZaqbi/3rPf+hKra8vt4u93eUe5NhDkislLlAcEYmPkCgKWB9ow5aK39NXIwALz3u4noT0TPOudaQDAiIroYjyDLstVx4gDgnPurqt8iel1r3UBVT0XVN4moV2dARD0iuhnRU0MGAHaFEd1u922deIVer/cuovalDIaO7EZBRPGRtinR3wMR1qaPWwJZlp2PqLWUwXIYoaqP8jwPz3gSeZ5PqurDiP6YMliKgvYaYz4x8708zycTwkdFZNEYswxgT1Rcq/qmgDQi8hnAMQC3AZwBULX+xDl3NRQRkWeqeinR1Fqj0ThARN2BDoior6rXAfQBNAFcBvAG/+e5GKsURXE/IQ5VbVbiSTDznfKXTwoEQia8Isr1dFxOaLLAzH1m/uq9fz8mLryDnod3UC2899MissLMI1+rsogOM19JvQW1KG/K02MMZjqdzs5NC28p/ANFF0YHAmnkkQAAAABJRU5ErkJggg=="></img>
+                  <Image
+                    height={24}
+                    width={24}
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACL0lEQVRIidVVPWtUQRQ9d6LwZqfQRkTFQgXBKKJG8CdEDQTBtHYWVoqFskXwI4VBQQv9BYp9hFUEEbQWIwgiwQ/EKqbZRd7cu9u8vRa+F2ZnZ/clZQ4MPM7ce869l3kzwFYHjdtU1QkROQtgDsBJAPvLnFUAH4jopbX2BREVmzbw3k8DeExEh2uK/AngmnPuVWrTJKomZr5LRK83IA4AhwC0ROSBqg4VPGQgIgsAbqFmfBFIVW+UuaMNmHkGwHxATQGYBfAlTlTV70Q0VxTFkYCeZ+ZzyRJUdRsz/2BmrZaqbi/3rPf+hKra8vt4u93eUe5NhDkislLlAcEYmPkCgKWB9ow5aK39NXIwALz3u4noT0TPOudaQDAiIroYjyDLstVx4gDgnPurqt8iel1r3UBVT0XVN4moV2dARD0iuhnRU0MGAHaFEd1u922deIVer/cuovalDIaO7EZBRPGRtinR3wMR1qaPWwJZlp2PqLWUwXIYoaqP8jwPz3gSeZ5PqurDiP6YMliKgvYaYz4x8708zycTwkdFZNEYswxgT1Rcq/qmgDQi8hnAMQC3AZwBULX+xDl3NRQRkWeqeinR1Fqj0ThARN2BDoior6rXAfQBNAFcBvAG/+e5GKsURXE/IQ5VbVbiSTDznfKXTwoEQia8Isr1dFxOaLLAzH1m/uq9fz8mLryDnod3UC2899MissLMI1+rsogOM19JvQW1KG/K02MMZjqdzs5NC28p/ANFF0YHAmnkkQAAAABJRU5ErkJggg==" />
                 </div>
                 <div className={`${style.face} ${style.faceBack}`}>
                   @Jeffersontk
