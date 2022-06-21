@@ -34,7 +34,7 @@ export const Hero = (): ReactElement => {
         </div>
       </div>
       <div className='flex items-end h-[30rem] md:h-110 justify-center'>
-        <Image src={Jeffbrito} height="450px" width="287px" />
+        <Image src={Jeffbrito} height="450px" width="287px" alt="Jefferson Brito" />
       </div>
     </div>
   )
