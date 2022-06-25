@@ -7,7 +7,7 @@ export const Hero = (): ReactElement => {
   return (
     <div className="grid md:grid-cols-2 grid-cols-1 gap-16 items-center justify-center">
       <div className='flex flex-col gap-10 h-[30rem] md:h-110 items-end md:items-start justify-center'>
-        <p className="md:text-xl text-base text-primary-light">
+        <p className="md:text-xl text-base text-white">
           Olá aqui é o jefferson Brito, seja bem-vindo! <br />
           Aqui você pode ver alguns dos meus projetos, posts e os meus canais de contato e
           uma breve descrição sobre mim e meu trabalho.
@@ -30,7 +30,7 @@ export const Hero = (): ReactElement => {
           Atuando como desenvolvedor front-end na Firjan SENAI no ISI (Instituto SENAI de Inovação).
         </p>
         <div className="flex w-full">
-          <button className='bg-primary-light w-40 px-4 py-2 font-semibold text-blue-200 rounded-3xl'>Ler mais</button>
+          <button className='bg-white w-40 px-4 py-2 font-semibold text-blue-200 rounded-3xl'>Ler mais</button>
         </div>
       </div>
       <div className='flex items-end h-[30rem] md:h-110 justify-center'>

@@ -17,7 +17,7 @@ export const Projects = (): ReactElement => {
       <div className="flex items-center justify-center w-full">
         <Container>
           <div className="flex items-end h-24 mb-6">
-            <h1 className="text-primary-light font-medium text-3xl">Minhas Habilidades</h1>
+            <h1 className="text-white font-medium text-3xl">Minhas Habilidades</h1>
           </div>
           <div className='max-w-xl xl:max-w-3xl h-80 flex flex-row-reverse flex-wrap justify-end items-center overflow-hidden gap-2'>
             <BallStacks

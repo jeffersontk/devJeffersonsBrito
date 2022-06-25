@@ -8,8 +8,8 @@ export const Footer = (): ReactElement => {
   return (
     <footer
       id="contact"
-      className="w-full bg-blue-100 h-72 flex flex-col justify-center items-center md:px-16 px-6">
-      <div className="h-full md:h-48 w-full flex flex-row-reverse md:justify-around justify-between text-primary-light">
+      className="w-full bg-blue-800 h-72 flex flex-col justify-center items-center md:px-16 px-6">
+      <div className="h-full md:h-48 w-full flex flex-row-reverse md:justify-around justify-between text-white">
         <div className="flex flex-col gap-2">
           <span className="font-semibold mb-2">Rede sociais</span>
           <Link href="https://github.com/jeffersontk" passHref>
@@ -82,7 +82,7 @@ export const Footer = (): ReactElement => {
           </div>
           <div className="flex gap-1 items-center max-w-[150px] md:max-w-[250px]">
             <div className={style.card}>
-              <div className="w-12 h-12 bg-blue-200 flex justify-center items-center rounded-xl">
+              <div className="w-12 h-12 bg-blue-900 flex justify-center items-center rounded-xl">
                 <Download size={24} color="#f5f5f5" weight="fill" />
               </div>
             </div>
@@ -90,7 +90,7 @@ export const Footer = (): ReactElement => {
           </div>
         </div>
       </div>
-      <div className="border-t-[1px] border-secondary-dark w-full h-14 flex justify-center items-center mt-5 text-primary-light ">
+      <div className="border-t-[1px] border-blue-900 w-full h-14 flex justify-center items-center mt-5 text-white ">
         <h4>Desenvolvido por Jefferson Brito</h4>
       </div>
     </footer >

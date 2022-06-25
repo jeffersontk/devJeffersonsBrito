@@ -78,9 +78,9 @@ export const Card = ({
           <Title id="title">{title}</Title>
           <Description>{description}</Description>
         </div>
-        <span className="w-full h-0.5 bg-primary-light" />
+        <span className="w-full h-0.5 bg-white" />
         <div className="w-full flex justify-end">
-          <a href={link} className="text-primary-light text-lg">
+          <a href={link} className="text-white text-lg">
             Saiba mais
           </a>
         </div>

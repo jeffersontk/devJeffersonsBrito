@@ -13,10 +13,10 @@ export const Navigation = (): ReactElement => {
 
   if (isMobile) {
     return (
-      <nav className="sticky top-0 z-50 bg-blue-200 h-14 flex items-center w-full">
+      <nav className="sticky top-0 z-50 bg-blue-800 h-14 flex items-center w-full">
         <div className="flex-1 flex justify-between">
           <Link href="/">
-            <a className="flex gap-1 items-center text-primary-light font-bold pl-6">
+            <a className="flex gap-1 items-center text-white font-bold pl-6">
               @DevJeffersonBrito
             </a>
           </Link>
@@ -27,12 +27,12 @@ export const Navigation = (): ReactElement => {
   }
   return (
     <div
-      className="sticky top-0 z-50 bg-blue-200 h-14 flex
+      className="sticky top-0 z-50 bg-blue-800 h-14 flex
         items-center justify-between px-16"
     >
       <div>
         <Link href="/">
-          <a className="flex gap-1 items-center text-primary-light font-bold">
+          <a className="flex gap-1 items-center text-white font-bold">
             @DevJeffersonBrito
           </a>
         </Link>

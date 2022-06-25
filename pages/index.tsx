@@ -11,7 +11,7 @@ import { Posts } from '../components/Organism/Posts'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-blue-900">
       <Head>
         <title>Dev JeffersonBrito</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -21,35 +21,34 @@ const Home: NextPage = () => {
         <BackgroundSection
           id="aboutMe"
           colorsBox={{
-            color1: 'md:bg-blue-100 bg-blue-100',
-            color2: 'md:bg-blue-200 bg-blue-200',
+            color1: 'md:bg-blue-800 bg-blue-800',
+            color2: 'md:bg-blue-900 bg-blue-900',
           }}
           content={
             (<Hero />)
           }
         />
         <DividerSection
-          icon={<Code size={24} color="#222b45" weight="bold" />}
+          icon={<Code size={24} color="#f5f5f5" weight="bold" />}
         />
         <BackgroundSection
           id="projects"
           colorsBox={{
-            color1: 'md:bg-blue-200 bg-blue-100',
-            color2: 'md:bg-blue-100 bg-blue-200',
+            color1: 'md:bg-blue-900 bg-blue-800',
+            color2: 'md:bg-blue-800 bg-blue-900',
           }}
           content={(<Projects />)}
         />
         <DividerSection
-          icon={<Article size={24} color="#222b45" weight="bold" />}
+          icon={<Article size={24} color="#f5f5f5" weight="bold" />}
         />
         <BackgroundSection
           id="posts"
           colorsBox={{
-            color1: 'bg-blue-100',
-            color2: 'bg-blue-200',
+            color1: 'md:bg-blue-800 bg-blue-800',
+            color2: 'md:bg-blue-900 bg-blue-900',
           }}
           content={(<Posts />)}
-          hiddenBox={true}
         />
         <Footer />
       </div>

@@ -41,7 +41,7 @@ export const Carousel = ({ slides, styleCard, title }: Props): ReactElement => {
   return (
     <Container>
       <div className="flex items-center justify-between mb-3">
-        <label className='text-primary-light font-medium text-3xl'>{title}</label>
+        <label className='text-white font-medium text-3xl'>{title}</label>
         <div className="flex gap-3">
           <CaretCircleLeft
             onClick={handleLeftClick}

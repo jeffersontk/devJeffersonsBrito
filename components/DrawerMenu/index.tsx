@@ -10,7 +10,7 @@ export const DrawerMenu = (): ReactElement => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <svg
-          className="w-6 h-6 fill-current text-primary-light"
+          className="w-6 h-6 fill-current text-white"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -33,25 +33,25 @@ export const DrawerMenu = (): ReactElement => {
             <a
               href="#aboutMe"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary-light font-semibold text-2xl"
+              className="text-white font-semibold text-2xl"
             >Sobre</a>
           </li>
           <li>
             <a href="#projects"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary-light font-semibold text-2xl"
+              className="text-white font-semibold text-2xl"
             >Projetos</a>
           </li>
           <li>
             <a href="#posts"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary-light font-semibold text-2xl"
+              className="text-white font-semibold text-2xl"
             >Posts</a>
           </li>
           <li>
             <a href="#contact"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary-light font-semibold text-2xl"
+              className="text-white font-semibold text-2xl"
             >Contato</a>
           </li>
         </ul>
