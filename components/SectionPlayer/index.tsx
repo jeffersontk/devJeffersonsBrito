@@ -13,7 +13,7 @@ interface SectionPlayer {
 
 export const SectionPlayer = ({ slug }: SectionPlayer): ReactElement => {
 
-  const { data } = useQuery<VideoProps>(Get_VideoBySlug, {
+  const { data } = useQuery<any>(Get_VideoBySlug, {
     variables: {
       slug
     }
