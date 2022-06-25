@@ -30,7 +30,7 @@ export const Hero = (): ReactElement => {
           Atuando como desenvolvedor front-end na Firjan SENAI no ISI (Instituto SENAI de Inovação).
         </p>
         <div className="flex w-full">
-          <button className='bg-white w-40 px-4 py-2 font-semibold text-blue-200 rounded-3xl'>Ler mais</button>
+          <button className='bg-white w-40 px-4 py-2 font-semibold text-blue-700 rounded-3xl'>Ler mais</button>
         </div>
       </div>
       <div className='flex items-end h-[30rem] md:h-110 justify-center'>
