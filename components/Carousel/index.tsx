@@ -11,11 +11,12 @@ type Props = {
 }
 
 export const Container = styled.article`
-  height: 30rem;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 1rem;
 `
 const CarouselStyled = styled.div`
   display: flex;

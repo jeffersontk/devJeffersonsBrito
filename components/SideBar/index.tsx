@@ -16,7 +16,6 @@ export const SideBar = ({ videos }: SideBarProps): ReactElement => {
 
       <div className="max-h-[90vh] flex flex-col gap-8 overflow-y-auto   ">
         {videos.map((item: any) => {
-          console.log('check', item)
           return (
             <Lesson
               key={item.id}

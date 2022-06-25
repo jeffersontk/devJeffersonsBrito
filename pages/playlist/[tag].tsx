@@ -8,6 +8,7 @@ import { GetPlaylistProps, Get_Playlists, Get_Playlist_By_Areatech } from "../..
 
 const PlayList = (): ReactElement => {
   const isFirstRender = useRef(true)
+  const [isFetching, setIsFetching] = useState(true)
   const [playlist, setPlaylist] = useState<any>()
   const [slugFirstVideo, setSlugFirstVideo] = useState()
   const router = useRouter()
@@ -25,17 +26,32 @@ const PlayList = (): ReactElement => {
       return
     }
     if (data) {
+      setIsFetching(false)
       setPlaylist(data.playlists)
+    } else {
+      setIsFetching(false)
     }
     if (playlist) {
       setSlugFirstVideo(playlist[0]?.videos[0].slug)
     }
   }, [data, playlist])
 
-  if (!playlist) {
+  if (isFetching) {
     return (
       <div>
-        <h1>carregando...</h1>
+        <Header />
+        <div className="flex flex-1 justify-center h-screen items-center">
+          <h1>carregando...</h1>
+        </div>
+      </div>
+    )
+  } else if (!playlist) {
+    return (
+      <div>
+        <Header />
+        <div className="flex flex-1 justify-center h-screen items-center">
+          <h1>Playlist ainda vazia</h1>
+        </div>
       </div>
     )
   }

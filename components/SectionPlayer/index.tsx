@@ -12,16 +12,12 @@ interface SectionPlayer {
 }
 
 export const SectionPlayer = ({ slug }: SectionPlayer): ReactElement => {
-  console.log('check slug value', slug)
+
   const { data } = useQuery<VideoProps>(Get_VideoBySlug, {
     variables: {
       slug
     }
   })
-
-  useEffect(() => {
-    console.log('data video', data)
-  }, [data])
 
   if (!data) {
     return (

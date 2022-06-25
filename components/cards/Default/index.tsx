@@ -65,7 +65,7 @@ export const Card = ({
       className="rounded-md"
     >
       <div className="
-      min-w-60 h-72 px-5 rounded-md flex flex-col 
+      min-w-60 h-96 px-5 rounded-md flex flex-col 
       items-center
        gap-2 hover:bg-black hover:bg-opacity-25
        ">
