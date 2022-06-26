@@ -40,7 +40,7 @@ export const DrawerPlaylist = ({ videos }: DrawerPlaylist): ReactElement => {
               return (
                 <li onClick={() => setIsOpen(!isOpen)}>
                   <Lesson
-                    key={video.id}
+                    key={index}
                     channel={video.channel}
                     tag={video.tech}
                     title={video.title}
