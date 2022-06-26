@@ -22,7 +22,7 @@ export const Header = ({ videos }: headerProps): ReactElement => {
   }, [])
 
   return (
-    <header className="w-full px-5 py-5 flex justify-between items-center 2xl:bg-blue-900 bg-blue-800 border-b border-gray-300">
+    <header className="w-full p-5 flex justify-between items-center 2xl:bg-blue-900 bg-blue-800 border-b border-gray-300">
       <div>
         <Link href="/#posts">
           <a>
@@ -39,7 +39,7 @@ export const Header = ({ videos }: headerProps): ReactElement => {
       </div>
       {isMobile && videos && videos?.length > 0 ?
         <div className="lg:hidden">
-          <DrawerPlaylist videos={videos} />
+          <DrawerPlaylist videos={videos} areaTech={tag as string} />
         </div>
         : <div />
       }

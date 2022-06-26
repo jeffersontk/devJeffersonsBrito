@@ -28,14 +28,14 @@ export const Lesson = (props: LessonProps): ReactElement => {
           @{channel}
         </a>
       </Link>
-      <div className="flex justify-center items-center">
+      <div className="flex md:justify-center items-center">
         <div className={classNames('', {
           'w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-r-[16px] border-r-blue-700 right-[100%]': isActivePlay,
           'w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-r-[15px] border-r-blue-800 2xl:border-r-blue-900 right-[100%]': !isActivePlay
         })} />
         <Link href={`/playlist/${areaTech}?slug=${props.slug}`}>
           <a>
-            <div className={classNames('rounded p-4 mt-2', {
+            <div className={classNames('rounded p-4 mt-2 w-full', {
               'bg-blue-700 border border-blue-700': isActivePlay,
               'border border-gray-300 hover:border-gray-100': !isActivePlay
             })}>
@@ -58,7 +58,6 @@ export const Lesson = (props: LessonProps): ReactElement => {
             </div>
           </a>
         </Link>
-
       </div>
     </div>
   )

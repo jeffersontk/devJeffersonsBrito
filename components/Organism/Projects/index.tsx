@@ -16,10 +16,10 @@ export const Projects = (): ReactElement => {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center justify-center">
       <div className="flex items-center justify-center w-full">
         <Container>
-          <div className="flex items-end h-24 mb-6">
+          <div className="flex h-[36px] mb-[6px]">
             <h1 className="text-white font-medium text-3xl">Minhas Habilidades</h1>
           </div>
-          <div className='max-w-xl xl:max-w-3xl h-80 flex flex-row-reverse flex-wrap justify-end items-center overflow-hidden gap-2'>
+          <div className='max-w-xl xl:max-w-3xl h-[382px] flex flex-row-reverse flex-wrap justify-end items-center overflow-hidden gap-2'>
             <BallStacks
               skill={JavascriptIMG}
               alt="Javascript"
