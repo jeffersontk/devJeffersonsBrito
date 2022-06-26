@@ -28,6 +28,8 @@ export const Get_Playlist_By_Areatech = gql`
         tech
         slug
         channel
+        areatech
+        typeClass
       }
     }
   }

@@ -90,7 +90,7 @@ export const Footer = (): ReactElement => {
           </div>
         </div>
       </div>
-      <div className="border-t-[1px] border-blue-900 w-full h-14 flex justify-center items-center mt-5 text-white ">
+      <div className="border-t-[1px] border-gray-300 w-full h-14 flex justify-center items-center mt-5 text-white ">
         <h4>Desenvolvido por Jefferson Brito</h4>
       </div>
     </footer >

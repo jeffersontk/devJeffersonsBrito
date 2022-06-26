@@ -14,9 +14,9 @@ export const Navigation = (): ReactElement => {
   if (isMobile) {
     return (
       <nav className="sticky top-0 z-50 bg-blue-800 h-14 flex items-center w-full">
-        <div className="flex-1 flex justify-between">
+        <div className="flex-1 flex justify-between px-6">
           <Link href="/">
-            <a className="flex gap-1 items-center text-white font-bold pl-6">
+            <a className="flex gap-1 items-center text-white font-bold">
               @DevJeffersonBrito
             </a>
           </Link>

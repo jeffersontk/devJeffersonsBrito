@@ -6,7 +6,7 @@ export const DrawerMenu = (): ReactElement => {
   return (
     <div className="flex flex-col items-center justify-center">
       <button
-        className="flex items-center justify-center bg-blue-800 py-2 pr-6 rounded-md"
+        className="flex items-center justify-center bg-blue-800 py-2 rounded-md"
         onClick={() => setIsOpen(!isOpen)}
       >
         <svg

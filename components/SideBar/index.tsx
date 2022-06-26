@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { Lesson } from "../Lesson";
+import { Lesson } from "../../components/Lesson";
 
 
 interface SideBarProps {
@@ -25,6 +25,7 @@ export const SideBar = ({ videos }: SideBarProps): ReactElement => {
               description={item.description}
               slug={item.slug}
               typeClass={item.typeClass}
+              areaTech={item.areatech}
             />
           )
         })}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactElement } from "react";
 import styled from 'styled-components'
 import { CardsProps } from "..";
@@ -70,7 +71,7 @@ export const Card = ({
        gap-2 hover:bg-black hover:bg-opacity-25
        ">
         <div
-          className="flex flex-col min-w-60 h-56
+          className="flex flex-col min-w-60 h-[330px]
           max-w-60 w-60
           items-center justify-center hover:justify-start
           py-3 gap-3"
@@ -80,9 +81,11 @@ export const Card = ({
         </div>
         <span className="w-full h-0.5 bg-white" />
         <div className="w-full flex justify-end">
-          <a href={link} className="text-white text-lg">
-            Saiba mais
-          </a>
+          <Link href={link || '/Projects'}>
+            <a className="text-white text-lg">
+              Saiba mais
+            </a>
+          </Link>
         </div>
       </div>
     </BackgroundCard>

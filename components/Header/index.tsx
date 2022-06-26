@@ -1,12 +1,26 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { ArrowLeft } from "phosphor-react";
-import { ReactElement } from "react";
+import { ReactElement, useEffect, useState } from "react";
+import { DrawerPlaylist } from "../DrawerPlaylist";
 
-export const Header = (): ReactElement => {
+type headerProps = {
+  videos?: []
+}
+
+export const Header = ({ videos }: headerProps): ReactElement => {
+  const [isMobile, setIsMobile] = useState(false)
   const router = useRouter()
   const query = router
   const { tag } = router.query
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const windowWidth = window.innerWidth
+      setIsMobile(windowWidth < 768)
+    }
+  }, [])
+
   return (
     <header className="w-full px-5 py-5 flex justify-between items-center 2xl:bg-blue-900 bg-blue-800 border-b border-gray-300">
       <div>
@@ -23,7 +37,12 @@ export const Header = (): ReactElement => {
         <span className="mx-1 text-xl text-blue-100 font-black">|</span>
         <span className="text-2xl font-thin uppercase">{tag}</span>
       </div>
-      <div />
+      {isMobile && videos && videos?.length > 0 ?
+        <div className="lg:hidden">
+          <DrawerPlaylist videos={videos} />
+        </div>
+        : <div />
+      }
     </header>
   )
 }
