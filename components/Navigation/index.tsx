@@ -39,6 +39,11 @@ export const Navigation = (): ReactElement => {
       </div>
       <ul className="flex items-center gap-5 text-white text-lg font-semibold">
         <li>
+          <Link href="/">
+            <a>Inicio</a>
+          </Link>
+        </li>
+        <li>
           <a href="#aboutMe">Sobre</a>
         </li>
         <li>

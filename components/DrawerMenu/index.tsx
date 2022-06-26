@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { X } from "phosphor-react"
 import { ReactElement, useState } from "react"
 
@@ -30,29 +31,47 @@ export const DrawerMenu = (): ReactElement => {
             </button>
           </li>
           <li>
+            <Link href="/">
+              <a
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-white font-semibold text-2xl"
+              >
+                Inicio
+              </a>
+            </Link>
+          </li>
+          <li>
             <a
               href="#aboutMe"
               onClick={() => setIsOpen(!isOpen)}
               className="text-white font-semibold text-2xl"
-            >Sobre</a>
+            >
+              Sobre
+            </a>
           </li>
           <li>
             <a href="#projects"
               onClick={() => setIsOpen(!isOpen)}
               className="text-white font-semibold text-2xl"
-            >Projetos</a>
+            >
+              Projetos
+            </a>
           </li>
           <li>
             <a href="#posts"
               onClick={() => setIsOpen(!isOpen)}
               className="text-white font-semibold text-2xl"
-            >Posts</a>
+            >
+              Posts
+            </a>
           </li>
           <li>
             <a href="#contact"
               onClick={() => setIsOpen(!isOpen)}
               className="text-white font-semibold text-2xl"
-            >Contato</a>
+            >
+              Contato
+            </a>
           </li>
         </ul>
       </div>
