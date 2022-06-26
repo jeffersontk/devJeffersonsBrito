@@ -38,9 +38,8 @@ export const DrawerPlaylist = ({ videos }: DrawerPlaylist): ReactElement => {
           {
             videos && videos.map((video: any, index: number) => {
               return (
-                <li onClick={() => setIsOpen(!isOpen)}>
+                <li key={index} onClick={() => setIsOpen(!isOpen)}>
                   <Lesson
-                    key={index}
                     channel={video.channel}
                     tag={video.tech}
                     title={video.title}
