@@ -36,7 +36,7 @@ export const DrawerPlaylist = ({ videos }: DrawerPlaylist): ReactElement => {
             </button>
           </li>
           {
-            videos.map((video: any) => {
+            videos && videos.map((video: any, index: number) => {
               return (
                 <li onClick={() => setIsOpen(!isOpen)}>
                   <Lesson
