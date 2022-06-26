@@ -8,7 +8,7 @@ export const Footer = (): ReactElement => {
   return (
     <footer
       id="contact"
-      className="w-full bg-blue-800 h-80 flex flex-col justify-center items-center md:px-16 px-6">
+      className="w-full bg-blue-900 h-80 flex flex-col justify-center items-center md:px-16 px-6">
       <div className="h-full md:h-52 w-full flex flex-row-reverse items-center md:justify-around justify-between text-white">
         <div className="flex flex-col gap-2">
           <span className="font-semibold mb-2">Rede sociais</span>

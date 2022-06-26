@@ -5,7 +5,6 @@ import { Carousel, Container } from "../../Carousel";
 export const Posts = (): ReactElement => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center justify-center">
-
       <Carousel
         title="Posts"
         styleCard='Default'

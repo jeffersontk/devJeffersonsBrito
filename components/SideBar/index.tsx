@@ -7,14 +7,13 @@ interface SideBarProps {
 }
 
 export const SideBar = ({ videos }: SideBarProps): ReactElement => {
-
   return (
     <aside className=" border-l border-gray-300 p-4 2xl:bg-blue-900 bg-blue-800 ">
       <span className="font-bold text-2xl pb-4 mb-4 border-b border-gray-300 block">
         PlayList
       </span>
 
-      <div className="max-h-[90vh] flex flex-col gap-8 overflow-y-auto   ">
+      <div className="flex flex-col gap-8 max-h-[80vh] overflow-y-auto">
         {videos.map((item: any) => {
           return (
             <Lesson

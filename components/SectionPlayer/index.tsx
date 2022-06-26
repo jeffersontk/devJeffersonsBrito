@@ -15,6 +15,7 @@ interface SectionPlayer {
 export const SectionPlayer = ({ slug }: SectionPlayer): ReactElement => {
   const [currentSlug, setCurrentSlug] = useState(slug)
   const router = useRouter()
+  const currentAsPath = router.asPath
   const { slug: querySlug } = router.query
 
   useEffect(() => {
@@ -24,8 +25,15 @@ export const SectionPlayer = ({ slug }: SectionPlayer): ReactElement => {
     else {
       setCurrentSlug(querySlug as string)
     }
-
   }, [slug, querySlug])
+
+  useEffect(() => {
+    if (currentSlug) {
+      router.replace({
+        query: { ...router.query, slug: currentSlug },
+      });
+    }
+  }, [currentSlug])
 
   const { data } = useQuery<any>(Get_VideoBySlug, {
     variables: {
@@ -86,7 +94,7 @@ export const SectionPlayer = ({ slug }: SectionPlayer): ReactElement => {
           </div>
         </div>
       </div>
-      <div className="lg:pr-4">
+      <div className="lg:px-4">
         <Footer />
       </div>
     </div>
