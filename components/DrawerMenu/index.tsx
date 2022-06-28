@@ -41,13 +41,14 @@ export const DrawerMenu = (): ReactElement => {
             </Link>
           </li>
           <li>
-            <a
-              href="#aboutMe"
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-white font-semibold text-2xl"
-            >
-              Sobre
-            </a>
+            <Link href="/Resume">
+              <a
+                onClick={() => setIsOpen(!isOpen)}
+                className="text-white font-semibold text-2xl"
+              >
+                Sobre
+              </a>
+            </Link>
           </li>
           <li>
             <a href="#projects"

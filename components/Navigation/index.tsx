@@ -44,7 +44,9 @@ export const Navigation = (): ReactElement => {
           </Link>
         </li>
         <li>
-          <a href="#aboutMe">Sobre</a>
+          <Link href="/Resume">
+            <a href="#aboutMe">Sobre</a>
+          </Link>
         </li>
         <li>
           <a href="#projects">Projetos</a>
