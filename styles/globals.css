@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  @apply bg-blue-900 text-white;
+  color: #f5f5f5;
 }
 
 

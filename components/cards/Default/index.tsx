@@ -7,9 +7,6 @@ type bgCard = {
   image: string;
 }
 const BackgroundCard = styled.div<bgCard>`
-  background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url(${props => props.image});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +60,7 @@ export const Card = ({
   return (
     <BackgroundCard
       image={imageBackground}
-      className="rounded-md"
+      className="rounded-md bg-blue-900"
     >
       <div className="
       min-w-60 h-96 px-5 rounded-md flex flex-col 
@@ -79,8 +76,7 @@ export const Card = ({
           <Title id="title">{title}</Title>
           <Description>{description}</Description>
         </div>
-        <span className="w-full h-0.5 bg-white" />
-        <div className="w-full flex justify-end">
+        <div className="w-full flex justify-end border-t border-white-200 pt-2">
           <Link href={link || '/Projects'}>
             <a className="text-white text-lg">
               Saiba mais
