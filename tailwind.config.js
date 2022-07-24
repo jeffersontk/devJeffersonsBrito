@@ -10,8 +10,8 @@ module.exports = {
       },
       colors: {
         brand: {
-          100: '#51ABFF',
-          200: '#2E1BA5'
+          100: '#4688D7',
+          200: '#4688D7'
         },
         white: {
           100: "#fff",

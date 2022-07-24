@@ -7,11 +7,11 @@ export const DrawerMenu = (): ReactElement => {
   return (
     <div className="flex flex-col items-center justify-center">
       <button
-        className="flex items-center justify-center bg-blue-800 py-2 rounded-md"
+        className=""
         onClick={() => setIsOpen(!isOpen)}
       >
         <svg
-          className="w-6 h-6 fill-current text-white"
+          className="w-6 h-6 fill-current text-gray-500"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -19,7 +19,7 @@ export const DrawerMenu = (): ReactElement => {
         </svg>
       </button>
       <div className={`${isOpen
-        ? "block bg-blue-700 fixed top-0 right-0 z-50 w-52 h-screen"
+        ? "block bg-brand-100 fixed top-0 right-0 z-50 w-52 h-screen"
         : "hidden"}`}>
         <ul className="flex flex-col gap-4 px-6 py-4">
           <li>

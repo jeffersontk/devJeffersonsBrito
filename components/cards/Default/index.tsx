@@ -19,7 +19,7 @@ const BackgroundCard = styled.div<bgCard>`
     display: block;
     visibility: visible;
     width: 100%;
-    color: #f5f5f5;
+    color: #323238;
     font-size: 1.2rem;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -43,7 +43,7 @@ const BackgroundCard = styled.div<bgCard>`
 const Title = styled.h1`
   font-size: 2rem;
   font-weight: 700;
-  color: #f5f5f5;
+  color: #323238;
   text-align: center;
 
 `
@@ -60,12 +60,12 @@ export const Card = ({
   return (
     <BackgroundCard
       image={imageBackground}
-      className="rounded-md bg-blue-900"
+      className="rounded-md bg-white-100"
     >
       <div className="
       min-w-60 h-96 px-5 rounded-md flex flex-col 
       items-center
-       gap-2 hover:bg-black hover:bg-opacity-25
+       gap-2
        ">
         <div
           className="flex flex-col min-w-60 h-[330px]
@@ -76,9 +76,9 @@ export const Card = ({
           <Title id="title">{title}</Title>
           <Description>{description}</Description>
         </div>
-        <div className="w-full flex justify-end border-t border-white-200 pt-2">
+        <div className="w-full flex justify-end border-t border-gray-500 pt-2">
           <Link href={link || '/Projects'}>
-            <a className="text-white text-lg">
+            <a className="text-gray-500 text-lg">
               Saiba mais
             </a>
           </Link>
